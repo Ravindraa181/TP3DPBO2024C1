@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DATA_MAIN_TITLE List</title>
+    <link rel="icon" href=".\assets\images\nayeonlogo.png" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style-type: none;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      #navbar {
+        color: white;
+      }
+
+      #navbar .nav-item :hover {
+        border-bottom: 3px solid #000000;
+      }
+
+      th,
+      td {
+        padding: 10px 5px;
+      }
+
+      .card img {
+        width: 150px;
+      }
+
+      #add-DATA_MAIN_TITLE-link {
+        cursor: pointer;
+      }
+
+      #footer a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+
+      #footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        padding: 20px;
+        text-align: center;
+      }
+
+      #footer.non-fixed {
+        position: relative;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg " 
+    id="navbar" style="background-color: rgb(246, 142, 159);">
+
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="index.php">
+          <img
+            src="assets/images/nayeonlogo.png"
+            height="40"
+            alt="logo.png"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler text-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                aria-current="page"
+                href="index.php"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                aria-current="page"
+                id="add-DATA_MAIN_TITLE-link"
+                >Add DATA_MAIN_TITLE</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                style="color: SET_COLOR_1"
+                aria-current="page"
+                href="group.php"
+                >Group List</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                style="color: SET_COLOR_2"
+                aria-current="page"
+                href="companies.php"
+                >Companies List</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" method="post">
+            <input
+              class="form-control me-2"
+              type="search"
+              name="search-DATA_MAIN_TITLE"
+              placeholder="Search DATA_MAIN_TITLE"
+              aria-label="search"
+              size="40"
+            />
+            <button
+              class="btn"
+              style="background-color: #303030; color: #ffffff"
+              type="submit"
+              name="search-in-table"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-3 pt-5" id="container" >
+      <div class="row">
+        <div class="col">
+          <div class="card my-5 mx-5" >
+            <div class="card-header text-center" >
+              <h3 class="my-0">DATA_MAIN_TITLE List</h3>
+            </div>
+            <div class="card-body" >
+              <div class="table-responsive">
+                <table
+                  class="table table-hover table-stripped table-bordered text-center"
+                >
+                  <thead class="table" style="background-color: rgb(246, 142, 159); color: #f9eaea;">
+                    DATA_TABEL_HEADER
+                  </thead>
+                  <tbody>
+                    DATA_TABEL
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="mt-2 py-3" id="footer" style="background-color: rgb(246, 142, 159);">
+      <div class="container-fluid">
+        <div class="row justify-content-center text-center">
+          <p class="my-0">
+            &copy; 2024 Copyright by
+            <a href="https://www.instagram.com/ravindramaulanas/">Ravindra</a>
+            &#9475; Powered by
+            <a href="https://getbootstrap.com/">Bootstrap.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/scripts/script.js"></script>
+    <script>
+      document
+        .getElementById("add-DATA_MAIN_TITLE-link")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+
+          var form = document.createElement("form");
+          form.method = "POST";
+          form.action = "create.php";
+
+          var input = document.createElement("input");
+          input.type = "hidden";
+          input.name = "add-DATA_MAIN_TITLE";
+          input.value = "true";
+          form.appendChild(input);
+
+          document.body.appendChild(form);
+          form.submit();
+        });
+    </script>
+    <script>
+      var container = document.getElementById("container");
+
+    </script>
+    SET_FOOTER
+  </body>
+</html>
